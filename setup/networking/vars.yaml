@@ -1,0 +1,21 @@
+---
+# Mapping of what hardware MAC addresses should be configured with specific IPs.
+mac_address_mapping:
+  "dc:a6:32:27:ce:c1":
+    name: pikube1.home
+    ip: "192.168.25.1"
+  "dc:a6:32:2b:0c:9a":
+    name: pikube2.home
+    ip: "192.168.25.2"
+  "dc:a6:32:2b:22:51":
+    name: pikube3.home
+    ip: "192.168.25.3"
+  "dc:a6:32:2b:21:a3":
+    name: pikube4.home
+    ip: "192.168.25.4"
+
+# Nameservers to use in resolv.conf.
+dns_nameservers:
+  - "192.168.16.2"
+  - "8.8.8.8"
+  - "8.8.4.4"

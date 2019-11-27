@@ -1,0 +1,11 @@
+---
+pikube:
+  hosts:
+    192.168.18.16:
+    192.168.18.17:
+    192.168.18.18:
+    192.168.18.20:
+  vars:
+    ansible_ssh_user: pi
+    deploy_target: pi
+    kubernetes_apiserver_advertise_address: 192.168.25.1
