@@ -8,3 +8,9 @@ pikube4 ansible_host=192.168.25.4 kubernetes_role=node
 ansible_ssh_user=pi
 deploy_target=pi
 kubernetes_apiserver_advertise_address=192.168.25.1
+
+[nfs-server]
+pikube1
+
+[nfs-server:vars]
+nfs_exports=["/clusterfs *(rw,sync,no_root_squash,no_subtree_check)"]
